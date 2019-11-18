@@ -24,6 +24,5 @@ steps:
     apkFiles: '**/*.apk'
     apksignerKeystoreFile: '- task: AndroidSigning@3
   inputs:
-    apkFiles: '**/*.apk */*.apk'
-    apksign: false'
-
+    apkFiles: '**/*.apk'
+    apksign: false
