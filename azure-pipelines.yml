@@ -19,10 +19,8 @@ steps:
     pathToPublish: '$(build.artifactStagingDirectory)/app/build/outputs/'
     artifactName: 'apk-files'
     artifactType: 'container'
+    
 - task: AndroidSigning@3
-  inputs:
-    apkFiles: '**/*.apk'
-    apksignerKeystoreFile: '- task: AndroidSigning@3
   inputs:
     apkFiles: '**/*.apk'
     apksign: false
